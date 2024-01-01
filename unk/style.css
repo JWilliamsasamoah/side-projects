@@ -1,0 +1,565 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    
+    scroll-behavior: smooth;
+
+}
+body{
+background-color: rgb(255, 255, 255);
+
+align-content: center;
+flex: auto;
+}
+
+@media screen and(min-width:500px) {
+    body{ width: 420px;
+    }
+    
+}
+
+@media screen and(min-width:800px) {
+    body{ width: 720px;
+    }
+}
+li,a,button{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    color: white;
+    text-decoration:none;
+    opacity: 1;
+    
+    
+    
+
+}
+.li,a:hover{
+color: red;
+
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 1%;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    height: 50px;
+    
+    opacity: 10;
+    
+
+}
+
+.logo{ cursor: pointer;}
+.nav_links{
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px
+}
+.nav_links{
+    transition: all 0.3s ease 0s;
+
+}
+
+
+.logo{
+    border-radius: 1px;
+    height: 50px;
+    width: 50px;
+}
+
+   
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+section h1{
+    font-size: 3rem;
+    padding: 10px;
+    
+    
+}
+section#Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+
+.back4{
+    background-color: black;
+    position: relative;
+   top: 0;
+    height: 1080px;
+    width: 100%;
+}
+@media (max-width:1100px){
+    .back4{
+        background-color: black;
+        position: relative;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+    
+    }}
+.video{
+    width:100%;
+    height: 1080px;
+    background-color: black;
+    opacity: 0.7;
+}
+@media (max-width:650px){
+    .video{
+        height:900px;
+       
+        width: 100%;
+
+    }}
+    @media (max-width:850px){
+        .video{
+            opacity: 0.5;
+            height: 1300px;
+            width: 100%;
+            
+    
+        }}
+        @media (max-width:1100px){
+            .video{
+                opacity: 0.5;
+                height:110vmax;
+                top: 0;
+                width: 100%;
+                
+        
+            }}
+.upgrade{
+    color: rgb(241, 16, 16);
+    font-size: 100px;
+    top: -600px;
+    position: relative;
+    font-weight: bolder;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 4px 4px 4px black;
+
+  
+    margin-top: 50px;
+}
+@media screen and (max-width:650px){
+    .upgrade{
+        top: -500px;
+        position: relative;
+        font-size: 45px;
+    }}
+.sharethis-inline-follow-buttons{
+    top: -470px;
+    position: relative;
+}
+/* about page*/
+
+.loader{
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader:after{
+    content: "";
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddd;
+    border-top-color: rgb(255, 8, 0);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+}
+
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+
+.banner{
+    display:flex;
+    background-color: black;
+    opacity: 0.5;
+    margin-top: -62px;
+    position: relative;
+}
+.back{
+    background-color: black;
+    height: 900px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+.title{
+  
+    font-size: 100px;
+    text-align: center;
+    top: -470px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    position: relative;
+
+
+}
+@media screen and (max-width:850px){
+    .title{
+        bottom: 100px;
+        position: absolute;
+        font-size: 45px;
+    }}
+    @media screen and (max-width:1100px){
+        .title{
+            bottom: 500px;
+           text-align: center;
+            position: relative;
+            font-size: 85px;
+        }}
+@media screen and (max-width:850px){
+.banner{
+width: 100%;
+display:flex;
+height:1080px;
+ background-color: black;
+opacity: 0.5;
+position: relative;
+}}
+
+
+@media screen and (max-width:1100px){
+    .banner{
+    width: 100%;
+    display:flex;
+    height:100vmax;
+     background-color: black;
+    opacity: 0.5;
+    top: 0;
+    position: relative;
+    }}
+    @media screen and (max-width:1400px){
+        .banner{
+        width: 100%;
+        display:flex;
+        height:100vh;
+         background-color: black;
+        opacity: 0.5;
+        top: 0;
+        position: relative;
+        }}
+@media screen and (max-width:850px){
+    .back{
+    height:100vh;
+    }}
+    @media screen and (max-width:1100px){
+        .back{
+        height:100vh;
+        }}
+        @media screen and (max-width:1400px){
+            .back{
+            height:100vh;
+            }}
+.line4{
+    
+    width: 600px;
+    height: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: red;
+    display:block;
+    top: -450px;
+    margin-left: auto;
+    margin-right:auto;
+    position: relative;
+}
+@media screen and (max-width:650px){
+    .line4{
+       border-style: none;
+        font-size: 45px;
+        left: 150px;
+        width: 490px;
+        position: relative;
+    }}
+@media screen and (max-width:850px){
+        .line4{
+            border-style: none;
+            font-size: 85px;
+            left: 150px;
+            width: 490px;
+            position: relative;
+
+    }}
+
+    @media screen and (max-width:1100px){
+        .line4{
+            border-style: none;
+
+    }}
+
+.tweet{
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:-300px;
+    background-color: rgb(255, 17, 0);
+    height: 34px;
+    width: 107px;
+    border-radius:20px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    animation: move 1.4s infinite ease-in-out alternate;
+    transition: box-shadow 0.5s;}
+    
+    @keyframes move{
+        from{
+            transform: translateY(0px);
+
+        }
+        to{
+           transform: translateY(-20px);
+        }}
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.about .content img{
+    height: 100vh;
+    width: 600px;
+    max-width: 100%;
+}
+
+
+.text{
+    width: 550px;
+    max-width: 100%;
+  padding: 0 10px;  
+}
+.content{
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.text h1{
+color: rgb(255, 0, 0);
+font-size: 85px;
+margin-bottom: 20px;
+text-transform: capitalize;
+text-decoration: none;
+}
+
+.text p{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 350px;
+
+
+}
+
+ 
+
+
+
+.mandi{
+   display: flex;
+    border-radius: 2px;
+    left: 3px;
+    bottom: 20px;
+    position: relative;
+}
+
+    
+section#space{
+    width: 400px;
+    height: 400px;
+   
+}
+
+@media screen and (max-width: 1180px){
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+@media screen and (max-width:650px){
+    .about .content .img{
+        margin-bottom: 5px;
+    }
+    .text h1{
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    .text p{
+    font-size: 12px;
+    margin-bottom: 300px;
+
+    }}
+    
+    /* podcast page */
+
+
+
+.back2{
+    background-color: black;
+    width: 100%;
+    height: 900px;
+    min-width: 480px;
+    top: -60px;
+    position: relative;
+}
+    .podimg{
+    width: 100%;
+    height: 900px;
+    min-width:480px;
+    top:-1px;
+    position: relative;
+    opacity: 0.5;
+    
+
+
+}
+
+
+    section#Podcast{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:left;
+    text-align:center;
+    width: 100%;
+    height: 100vh;
+    padding:100px 1%;
+}
+.pod{
+   top: -140px;
+   justify-content:space-between;
+   align-content: space-between;
+    position: relative;
+}
+.pod2{
+    top: -110px;
+    position: relative;
+}
+.pod3{
+    top: -75px;
+    position: relative;
+}
+.titles{
+    font-size: 100px;
+    text-align: center;
+    top: -580px;
+    left: -30px;
+    font-family:sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    position: relative;
+}
+@media screen and (max-width:650px){
+    .titles{
+        font-size: 60px;
+        
+    }}
+
+    .line5{
+        width: 700px;
+        height: 10px;
+        border: 5px;
+        border-style: solid;
+        border-color: red;
+        left: 350px;
+        bottom: 560px;
+        position: relative;
+    }
+    @media screen and (max-width:650px){
+        .line5{
+            border-style: none;
+            font-size: 45px;
+            left: 400px;
+            width: 490px;
+            position: relative;
+        }}
+        @media screen and (max-width:850px){
+            .line5{
+                font-size: 45px;
+                left: 100px;
+                width: 490px;
+                position: relative;
+            }}
+            @media screen and (max-width:1100px){
+                .listen{
+                    
+                }}
+            @media screen and (max-width:1100px){
+                    .line5{
+                        visibility: hidden;
+                    }}
+    .listen{
+        display:block;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top:-300px;
+        background-color: rgb(255, 17, 0);
+        height: 34px;
+        width: 107px;
+        border-radius:20px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        position: relative;
+        animation: move 1.4s infinite ease-in-out alternate;
+        transition: box-shadow 0.5s;}
