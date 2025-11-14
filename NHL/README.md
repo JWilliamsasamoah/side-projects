@@ -1,6 +1,6 @@
 # NHL Real-Time Shot Attempt Bot and GOALS
 
-This project connects to the **NHL SMT Optics3D tracking API**, pulls **live game events**, and posts **shot attempt updates to Twitter** in real time.
+This project connects to the **NHL SMT Optics3D tracking API**, pulls **live game events**, and posts **shot attempt and Goals updates to Twitter** in real time.
 
 It’s a side project that builds on my experience as a **Data Engineer Intern at MLSE**, working with real-time puck and player tracking data.
 
